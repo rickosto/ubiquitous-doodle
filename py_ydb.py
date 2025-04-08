@@ -55,7 +55,7 @@ def create_tables(pool: ydb.QuerySessionPool):
 
 def run(endpoint, database):
     driver_config = ydb.DriverConfig(
-        endpoint, database, credentials=ydb.AccessTokenCredentials("t1.9euelZqTj5KbzsyJxpySm5eeyoueiu3rnpWai8zNkpeKnMyUjMaPnY-YzJrl8_dbPStA-e9daENU_d3z9xtsKED5711oQ1T9zef1656VmsjOl42Qi5jMio3MypKVjpvN7_zF656VmsjOl42Qi5jMio3MypKVjpvN.MBsoX5uWFUgXERWp_7TYblrloz6jxBjuTez99EuUwrLbTLQjH9l_nVq9X82os9NBcdCNiSVfnKRfUZdSJtsWDA"),
+        endpoint, database, credentials=ydb.AccessTokenCredentials("t1.9euelZqTj5KbzsyJxpySm5eeyoueiu3rn*************nMyUjMaPnY-YzJrl8_dbPStA"),
         root_certificates=ydb.load_ydb_root_certificate(),
     )
     with ydb.Driver(driver_config) as driver:
@@ -70,5 +70,5 @@ def run(endpoint, database):
             print(driver.discovery_debug_details())
             exit(1)
 
-run('grpcs://ydb.serverless.yandexcloud.net:2135', '/ru-central1/b1ghhn6ksr0p94oqnrv6/etnvbbq4db6bvelqi1la')
+run('grpcs://ydb.serverless.yandexcloud.net:2135', '/ru-central1/b1ghhn6*****94oqnrv6/etnvbbq4db6bvelqi1la')
 
